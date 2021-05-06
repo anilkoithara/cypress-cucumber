@@ -1,4 +1,4 @@
-# Automation test for Company
+# Simple Automation tests using cypress + cypress
 
 A simple log in page with feedback form behind it.
 
@@ -32,7 +32,7 @@ If you are using docker to run the test you can skip all installation steps and 
 
 ## Setup and start running the test without docker
 ## Prerequisites
-If you’re using npm to install Cypress, please install Node.js 8 or above
+If you are using npm to install Cypress, please install Node.js 8 or above
 
 Install
 
@@ -68,9 +68,9 @@ Cypress window will open and then click on the test you want to run
 
 Please make sure that the baseUrl to `http://localhost:3000` in `cypress.json` file 
 
-### Run all the tests in headless mode and generate reports follow this steps
+### Run all the tests in headless mode and generate reports follow these steps
 
-Install all the depedency and run app and then run test, 3 steps are shown below
+Install all the depedencies and run app and then run test, 3 steps are shown below
 ```shell
 npm install 
 npm run start
@@ -98,27 +98,27 @@ We have automated two features the login and feedback form features, details are
 2) `feedback.feature`
 - Contains four scenarios - first and second scenarios covers `happy path` and third and fouth scenarios cover `unhappy` path.
 
-- Base URL and other test configuration can be viewed inside `cypress.json` file, I have setup the two config file inside `cpress\config`, to run the test aganist different environment.
+- Base URL and other test configuration can be viewed inside `cypress.json` file, I have setup 2 config files inside `cypress\config` folder, can be used to run the test against different environment.
 
 - You can select the browser to run the test, when running the test in headless mode the default browser is `Electron 87 (headless)`
 
  ### Adding new test 
-  - Need to add `@ui` into feature file to start runnning as a UI test.
+  - Need to add `@ui` into feature file to start running as a UI test.
 
 ### Automation Framework details 
  --- Tools 
   -- Cucumber BDD -- https://cucumber.io/
   -- Cypress - Test runner -- https://www.cypress.io/
   -- Docker - Container -- https://hub.docker.com/r/cypress/included
-  Good to have a test architecture digram
+  Good to have a test architecture diagram
 ### Framework and Feature improvements
 
 Improvement suggestions and options 
 - Need to generate dynamic test data
-- Parallel testing ( cypress dashboard is required to run the test in parallel)
-- Same linke custom login command we can need add more custom command whenever possible
-- Can use more reusable steps using cucumber `DataTable` for running same set of test with for different data set we can using cucumber `Scenario Outline`
-- We need to modify the page object to have a base page and create static methods
+- Parallel testing (cypress dashboard is required to run the test in parallel)
+- Similar to custom login command, we can need add more custom command wherever possible
+- Can use more reusable steps using cucumber `DataTable`, and can use cucumber `Scenario Outline`
+- We can modify the page object to have a base page and create static methods for more code clarity and reusability
 - We can load the element locators from `support\locators.js` file,
 
 `export default {
@@ -140,7 +140,7 @@ then in test file we can import the file
 - `Code Coverage` matrix can be also be generated after test completions for more details visit https://docs.cypress.io/guides/tooling/code-coverage.html#E2E-and-unit-code-coverage,
 
 - Mochawesome reporter can be added to generate nice html reports
-- Need to setup add test run in different browser chrome and firefox(easily be achiviable in cypress with passing --browser firefox) with different viewport(Internet Explorer and mobile testing in not currently supported )
+- Need to setup add test run in different browser chrome and firefox( easily be achievable in cypress with passing --browser firefox) with different viewport (Internet Explorer and mobile testing in not currently supported)
 - Good to have a smoke pack
 
 ## Technical debates
