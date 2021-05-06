@@ -41,7 +41,7 @@ Install
 ### clone the repository
 
 ```
-
+https://github.com/anilkoithara/cypress-cucumber.git
 
 ```
 
