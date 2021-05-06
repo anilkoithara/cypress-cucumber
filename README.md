@@ -149,7 +149,3 @@ then in test file we can import the file
 - We can add more unit test, component and integration api tests to get more test coverage at lower levels and try to reduce E2E test 
 Good testing `pyramid approach` reference can be viewed here https://martinfowler.com/articles/practical-test-pyramid.html
 - Cypress retry options to get rid of test flakiness
-
-### General comment
-- Setting up and running test in docker was bit gray area for me, might need some impovement in that area.
-- I have added the code into a branch rather than pushing into the master, branch name `ui-automation-task`
