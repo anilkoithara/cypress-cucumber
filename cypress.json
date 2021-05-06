@@ -1,0 +1,14 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "ignoreTestFiles": "*.js",
+    "baseUrl": "http://localhost:8000",
+    "defaultCommandTimeout": 8000,
+    "viewportWidth": 1090,
+    "viewportHeight": 1020,
+    "videoUploadOnPasses": true,
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "cypress/reports/test-output-[hash].xml",
+        "toConsole": true
+      }
+}

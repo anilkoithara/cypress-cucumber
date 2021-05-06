@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://www.stageurl.com",
+    "env": {
+      "environment": "stage"
+    }
+  }
